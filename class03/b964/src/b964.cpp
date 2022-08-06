@@ -24,6 +24,7 @@ int main() {
 		cin >> temp;
 		scores.push_back(temp);
 	}
+
 	sort(scores.begin(), scores.end());
 	for(int i = 0; i < n; ++i){
 		if(i != n-1)
@@ -32,7 +33,6 @@ int main() {
 			cout << scores[i];
 	}
 	cout << "\n" ;
-
 	if(scores[n-1] < 60){
 		isWorst = true;
 		best = scores[n-1];
@@ -48,7 +48,6 @@ int main() {
 			}
 		}
 	}
-
 	if(isBest){
 		cout << "best case\n";
 		cout << worst;
@@ -59,6 +58,5 @@ int main() {
 		cout << best << "\n";
 		cout << worst << "\n";
 	}
-
 	return 0;
 }
