@@ -11,6 +11,7 @@ using namespace std;
 
 int main(){
 	// f605 購買力 2021-01
+
 	int total = 0;
 	int total_price = 0;
 	int row,target;
@@ -30,7 +31,6 @@ int main(){
 			max = c;
 		else if(c < min)
 			min = c;
-
 		if(max - min >= target){
 			total += 1;
 			total_price += (a + b + c)/3;
