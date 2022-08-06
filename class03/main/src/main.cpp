@@ -11,7 +11,7 @@ using namespace std;
 
 int main() {
 	// bubble sort
-	int numbers[12] = {32, 58, 67, 100, 15, 82, 98, 50, 63, 97, 85, 93};
+	int numbers[12] = {32, 58, 67, 100, 15, 82, 98, 50, 62, 97, 85, 93};
 	for(int i = 0; i < 12; ++i){
 		for(int j = 0; j < 11; ++j){
 			if(numbers[j] > numbers[j+1]){
