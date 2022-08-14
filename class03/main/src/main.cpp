@@ -9,20 +9,45 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-	// bubble sort
-	int numbers[12] = {32, 58, 67, 100, 15, 82, 98, 50, 62, 97, 85, 93};
-	for(int i = 0; i < 12; ++i){
-		for(int j = 0; j < 11; ++j){
-			if(numbers[j] > numbers[j+1]){
-				int temp = numbers[j];
-				numbers[j] = numbers[j+1];
-				numbers[j+1] = temp;
+
+
+void bubble_sort(int numbers[12]){
+	for(int i = 0; i < 11; ++i){
+		for(int k = 0; k < 11; ++k){
+			if(numbers[k] > numbers[k+1]){
+				int temp = numbers[k];
+				numbers[k] = numbers[k+1];
+				numbers[k+1] = temp;
 			}
 		}
-		for(int k = 0; k < 12; ++k){
-			cout << numbers[k] << " ";
+		for(int i = 0; i< 12; ++i){
+			cout << numbers[i] << " ";
 		}
 		cout << "\n";
 	}
 }
+
+
+int main() {
+	int numbers[12] = {32, 58, 67, 100, 15, 82, 98, 50, 62, 97, 85, 93};
+
+	// bubble sort
+	bubble_sort(numbers);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
