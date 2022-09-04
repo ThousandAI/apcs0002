@@ -19,14 +19,15 @@ struct Person{
 };
 
 int main(void){
-	struct Person person1;
+
+	Person person1;
 	person1.name = "Thousand";
 	person1.education = "Ph.D";
 	person1.age = 30;
 	person1.likes = 0;
-	cout << person1.name << "\n";
+	cout << person1.name << " " << person1.education << " " << person1.age << " " << person1.likes << "\n";
 
-	struct Person *person2 = new struct Person;
+	Person* person2 = new Person;
 	(*person2).name = "Allie";
 	(*person2).education = "Bachelor";
 
@@ -37,10 +38,10 @@ int main(void){
 
 	cout << person2-> age << "\n";
 }
+
 */
 
 
-/*
 class Person{
 public: // Access modifiers
 	string name;
@@ -48,10 +49,12 @@ public: // Access modifiers
 	int age;
 	int likes;
 
+	// method
 	void introduce(){
 		cout << "Name is: " << name << ", " << "Education is: " << education << ", " << "Age is: " << age << ", " << "Likes: " << likes << " "<< "\n";
 	}
 
+	// 建構子 (constructor)
 	Person(string n, string e, int a, int l){
 		name = n;
 		education = e;
@@ -82,10 +85,10 @@ int main() {
 	return 0;
 }
 
-*/
+
 
 // Encapsulation
-
+/*
 class Person{
 private:
 	string name;
@@ -121,3 +124,4 @@ int main(void){
 	//person1.name = "Thousand";
 }
 
+*/
